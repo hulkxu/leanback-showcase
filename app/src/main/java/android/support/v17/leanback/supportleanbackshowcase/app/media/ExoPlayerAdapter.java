@@ -1,36 +1,57 @@
 package android.support.v17.leanback.supportleanbackshowcase.app.media;
 
+import android.app.Activity;
 import android.content.Context;
-import android.media.AudioManager;
 import android.net.Uri;
 import android.os.Handler;
+import android.support.annotation.Nullable;
 import android.support.v17.leanback.media.PlaybackGlueHost;
 import android.support.v17.leanback.media.PlayerAdapter;
 import android.support.v17.leanback.media.SurfaceHolderGlueHost;
 import android.support.v17.leanback.supportleanbackshowcase.R;
+import android.support.v17.leanback.supportleanbackshowcase.app.room.controller.app.SampleApplication;
+import android.util.Log;
 import android.view.SurfaceHolder;
+import android.widget.TextView;
 
 import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.DefaultLoadControl;
+import com.google.android.exoplayer2.DefaultRenderersFactory;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.Timeline;
-import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
+import com.google.android.exoplayer2.drm.DefaultDrmSessionManager;
+import com.google.android.exoplayer2.drm.FrameworkMediaCrypto;
+import com.google.android.exoplayer2.offline.FilteringManifestParser;
+import com.google.android.exoplayer2.offline.StreamKey;
+import com.google.android.exoplayer2.source.ConcatenatingMediaSource;
 import com.google.android.exoplayer2.source.ExtractorMediaSource;
 import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.source.TrackGroupArray;
+import com.google.android.exoplayer2.source.dash.DashMediaSource;
+import com.google.android.exoplayer2.source.dash.manifest.DashManifestParser;
+import com.google.android.exoplayer2.source.hls.HlsMediaSource;
+import com.google.android.exoplayer2.source.hls.playlist.DefaultHlsPlaylistParserFactory;
+import com.google.android.exoplayer2.source.smoothstreaming.SsMediaSource;
+import com.google.android.exoplayer2.source.smoothstreaming.manifest.SsManifestParser;
+import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
+import com.google.android.exoplayer2.trackselection.TrackSelection;
 import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
-import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
+import com.google.android.exoplayer2.ui.DebugTextViewHelper;
+import com.google.android.exoplayer2.upstream.DataSource;
+import com.google.android.exoplayer2.util.EventLogger;
 import com.google.android.exoplayer2.util.Util;
+
+import java.util.List;
 
 /**
  * This implementation extends the {@link PlayerAdapter} with a {@link SimpleExoPlayer}.
  */
-public class ExoPlayerAdapter extends PlayerAdapter implements ExoPlayer.EventListener{
+public class ExoPlayerAdapter extends PlayerAdapter implements ExoPlayer.EventListener {
 
+    private final static String TAG = "ExoPlayerAdapter";
     Context mContext;
     final SimpleExoPlayer mPlayer;
     SurfaceHolderGlueHost mSurfaceHolderGlueHost;
@@ -45,19 +66,47 @@ public class ExoPlayerAdapter extends PlayerAdapter implements ExoPlayer.EventLi
     final Handler mHandler = new Handler();
     boolean mInitialized = false;
     Uri mMediaSourceUri = null;
+    private String[] mSoucePathArray;
     boolean mHasDisplay;
     boolean mBufferingStart;
-    @C.StreamType int mAudioStreamType;
+    @C.StreamType
+    int mAudioStreamType;
+    private DataSource.Factory mDataSourceFactory;
+    private DefaultTrackSelector trackSelector;
+    private DefaultTrackSelector.Parameters trackSelectorParameters;
+    private DebugTextViewHelper debugViewHelper;
 
     /**
      * Constructor.
      */
     public ExoPlayerAdapter(Context context) {
         mContext = context;
+        mDataSourceFactory = ((SampleApplication) ((Activity) context).getApplication()).buildDataSourceFactory();
+
+        @DefaultRenderersFactory.ExtensionRendererMode int extensionRendererMode =
+                DefaultRenderersFactory.EXTENSION_RENDERER_MODE_OFF;
+        DefaultRenderersFactory renderersFactory =
+                new DefaultRenderersFactory(context, extensionRendererMode);
+
+        TrackSelection.Factory trackSelectionFactory;
+        trackSelectionFactory = new AdaptiveTrackSelection.Factory();
+        trackSelectorParameters = new DefaultTrackSelector.ParametersBuilder().build();
+        trackSelector = new DefaultTrackSelector(trackSelectionFactory);
+        trackSelector.setParameters(trackSelectorParameters);
+        DefaultDrmSessionManager<FrameworkMediaCrypto> drmSessionManager = null;
+
         mPlayer = ExoPlayerFactory.newSimpleInstance(mContext,
-                new DefaultTrackSelector(),
-                new DefaultLoadControl());
+                renderersFactory,
+                trackSelector,
+                drmSessionManager
+        );
         mPlayer.addListener(this);
+        mPlayer.addAnalyticsListener(new EventLogger(trackSelector));
+    }
+
+    public void setDebugTextView(TextView textView) {
+        debugViewHelper = new DebugTextViewHelper(mPlayer, textView);
+        debugViewHelper.start();
     }
 
     @Override
@@ -103,6 +152,8 @@ public class ExoPlayerAdapter extends PlayerAdapter implements ExoPlayer.EventLi
     public void release() {
         changeToUninitialized();
         mHasDisplay = false;
+        debugViewHelper.stop();
+        debugViewHelper = null;
         mPlayer.release();
     }
 
@@ -221,6 +272,13 @@ public class ExoPlayerAdapter extends PlayerAdapter implements ExoPlayer.EventLi
         return true;
     }
 
+    public boolean setDataSource(String[] uri) {
+        mSoucePathArray = uri;
+        prepareMediaForPlaying2();
+        return true;
+    }
+
+
     public int getAudioStreamType() {
         return mAudioStreamType;
     }
@@ -232,16 +290,50 @@ public class ExoPlayerAdapter extends PlayerAdapter implements ExoPlayer.EventLi
     /**
      * Set {@link MediaSource} for {@link SimpleExoPlayer}. An app may override this method in order
      * to use different {@link MediaSource}.
+     *
      * @param uri The url of media source
      * @return MediaSource for the player
      */
     public MediaSource onCreateMediaSource(Uri uri) {
-        String userAgent = Util.getUserAgent(mContext, "ExoPlayerAdapter");
-        return new ExtractorMediaSource(uri,
-                new DefaultDataSourceFactory(mContext, userAgent),
-                new DefaultExtractorsFactory(),
-                null,
-                null);
+        return buildMediaSource(uri, null);
+    }
+
+    public MediaSource onCreateMediaSource(String[] uris) {
+        MediaSource[] mediaSources = new MediaSource[uris.length];
+        for (int i = 0; i < uris.length; i++) {
+            mediaSources[i] = buildMediaSource(Uri.parse(uris[i]), null);
+        }
+        return mediaSources.length == 1 ? mediaSources[0] : new ConcatenatingMediaSource(mediaSources);
+    }
+
+    private List<StreamKey> getOfflineStreamKeys(Uri uri) {
+        return ((SampleApplication) ((Activity) mContext).getApplication()).getDownloadTracker().getOfflineStreamKeys(uri);
+    }
+
+    private MediaSource buildMediaSource(Uri uri, @Nullable String overrideExtension) {
+        @C.ContentType int type = Util.inferContentType(uri, overrideExtension);
+        switch (type) {
+            case C.TYPE_DASH:
+                return new DashMediaSource.Factory(mDataSourceFactory)
+                        .setManifestParser(
+                                new FilteringManifestParser<>(new DashManifestParser(), getOfflineStreamKeys(uri)))
+                        .createMediaSource(uri);
+            case C.TYPE_SS:
+                return new SsMediaSource.Factory(mDataSourceFactory)
+                        .setManifestParser(
+                                new FilteringManifestParser<>(new SsManifestParser(), getOfflineStreamKeys(uri)))
+                        .createMediaSource(uri);
+            case C.TYPE_HLS:
+                return new HlsMediaSource.Factory(mDataSourceFactory)
+                        .setPlaylistParserFactory(
+                                new DefaultHlsPlaylistParserFactory(getOfflineStreamKeys(uri)))
+                        .createMediaSource(uri);
+            case C.TYPE_OTHER:
+                return new ExtractorMediaSource.Factory(mDataSourceFactory).createMediaSource(uri);
+            default: {
+                throw new IllegalStateException("Unsupported type: " + type);
+            }
+        }
     }
 
     private void prepareMediaForPlaying() {
@@ -257,7 +349,32 @@ public class ExoPlayerAdapter extends PlayerAdapter implements ExoPlayer.EventLi
         mPlayer.setVideoListener(new SimpleExoPlayer.VideoListener() {
             @Override
             public void onVideoSizeChanged(int width, int height, int unappliedRotationDegrees,
-                    float pixelWidthHeightRatio) {
+                                           float pixelWidthHeightRatio) {
+                getCallback().onVideoSizeChanged(ExoPlayerAdapter.this, width, height);
+            }
+
+            @Override
+            public void onRenderedFirstFrame() {
+            }
+        });
+        notifyBufferingStartEnd();
+        getCallback().onPlayStateChanged(ExoPlayerAdapter.this);
+    }
+
+    private void prepareMediaForPlaying2() {
+        reset();
+        if (mSoucePathArray != null) {
+            MediaSource mediaSource = onCreateMediaSource(mSoucePathArray);
+            mPlayer.prepare(mediaSource);
+        } else {
+            return;
+        }
+
+        mPlayer.setAudioStreamType(mAudioStreamType);
+        mPlayer.setVideoListener(new SimpleExoPlayer.VideoListener() {
+            @Override
+            public void onVideoSizeChanged(int width, int height, int unappliedRotationDegrees,
+                                           float pixelWidthHeightRatio) {
                 getCallback().onVideoSizeChanged(ExoPlayerAdapter.this, width, height);
             }
 
@@ -319,6 +436,8 @@ public class ExoPlayerAdapter extends PlayerAdapter implements ExoPlayer.EventLi
 
     @Override
     public void onPlayerError(ExoPlaybackException error) {
+        Log.d(TAG, error.toString());
+        Log.d(TAG, getCallback().toString());
         getCallback().onError(ExoPlayerAdapter.this, error.type,
                 mContext.getString(R.string.lb_media_player_error,
                         error.type,
@@ -329,7 +448,7 @@ public class ExoPlayerAdapter extends PlayerAdapter implements ExoPlayer.EventLi
     public void onLoadingChanged(boolean isLoading) {
     }
 
-    @Override
+
     public void onTimelineChanged(Timeline timeline, Object manifest) {
     }
 
@@ -337,7 +456,6 @@ public class ExoPlayerAdapter extends PlayerAdapter implements ExoPlayer.EventLi
     public void onTracksChanged(TrackGroupArray trackGroups, TrackSelectionArray trackSelections) {
     }
 
-    @Override
     public void onPositionDiscontinuity() {
     }
 }

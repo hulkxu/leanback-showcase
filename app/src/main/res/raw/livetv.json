@@ -1,0 +1,1169 @@
+[
+  {
+    "title": "中央电视台",
+    "cards": [
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-1综合",
+        "description": "CCTV-1综合",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/88888888/224/3221225530/index.m3u8",
+          "http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221225530/index.m3u8",
+          "http://183.251.61.207/PLTV/88888888/224/3221225922/index.m3u8",
+          "http://183.252.176.10/PLTV/88888888/224/3221225922/index.m3u8",
+          "http://183.207.249.15/PLTV/3/224/3221225530/index.m3u8",
+          "http://202.107.188.232:5002/cctv1_hdcq-1.m3u8?token=radio366",
+          "http://117.169.120.210:8080/live/cctv-1/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-1/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-1/.m3u8",
+          "http://183.251.61.207/PLTV/88888888/224/3221225812/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/88888888/224/3221226316/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221227400/index.m3u8",
+          "http://223.110.243.170/PLTV/3/224/3221226316/index.m3u8",
+          "http://183.207.248.71/cntv/live1/HD-2500k-1080P-cctv1/HD-2500k-1080P-cctv1",
+          "http://223.110.243.155:80/PLTV/3/224/3221227400/index.m3u8"
+        ],
+        "localImageResource": "cctv_1"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-2财经",
+        "description": "CCTV-2财经",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/2510088/224/3221226993/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221227207/index.m3u8",
+          "http://223.110.245.170/ott.js.chinamobile.com/PLTV/3/224/3221227207/index.m3u8",
+          "http://112.50.243.10/PLTV/88888888/224/3221225800/1.m3u8",
+          "http://117.169.120.210:8080/live/cctv-2/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-2/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-2/.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227412/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227207/index.m3u8"
+        ],
+        "localImageResource": "cctv_2"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-3综艺",
+        "description": "CCTV-2综艺",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221225588/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221227415/index.m3u8",
+          "http://183.207.249.14/PLTV/3/224/3221225588/index.m3u8",
+          "http://183.207.248.71/cntv/live1/HD-2500k-1080P-cctv3/HD-2500k-1080P-cctv3",
+          "http://183.207.249.14/PLTV/3/224/3221225588/index.m3u8",
+          "http://117.169.120.210:8080/live/cctv-3/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-3/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-3/.m3u8",
+          "http://ivi.bupt.edu.cn/hls/cctv3hd.m3u8",
+          "http://223.110.245.165/ott.js.chinamobile.com/PLTV/3/224/3221225588/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227415/index.m3u8",
+          "http://117.169.79.101:8080/PLTV/88888888/224/3221225756/index.m3u8",
+          "http://183.251.61.207/PLTV/88888888/224/3221225801/index.m3u8"
+        ],
+        "localImageResource": "cctv_3"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-4中文国际",
+        "description": "CCTV-4中文国际",
+        "sources": [
+          "http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221227378/index.m3u8",
+          "http://223.110.242.130:6610/gitv/live1/G_CCTV-4-HQ/1.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221225534/index.m3u8",
+          "http://117.169.120.210:8080/live/cctv-4/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-4/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-4/.m3u8"
+        ],
+        "localImageResource": "cctv_4"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-5体育",
+        "description": "CCTV-5体育",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221227166/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/2510088/224/3221227468/index.m3u8",
+          "http://223.110.243.149/PLTV/3/224/3221227166/index.m3u8",
+          "http://223.110.245.165/ott.js.chinamobile.com/PLTV/3/224/3221226362/index.m3u8",
+          "http://223.110.243.172/PLTV/3/224/3221227166/index.m3u8",
+          "http://117.169.120.210:8080/live/cctv-5/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-5/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-5/.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227166/1.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227468/1.m3u8",
+          "http://223.110.245.165/ott.js.chinamobile.com/PLTV/3/224/3221227401/index.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225800/3.m3u8",
+          "http://183.251.61.207/PLTV/88888888/224/3221225925/index.m3u8",
+          "http://183.207.248.71/cntv/live1/HD-2500k-1080P-cctv5/HD-2500k-1080P-cctv5",
+          "http://111.40.205.87/PLTV/88888888/224/3221225690/index.m3u8"
+        ],
+        "localImageResource": "cctv_5"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-5+体育赛事",
+        "description": "CCTV-5+体育赛事",
+        "sources": [
+          "http://223.110.243.155:80/PLTV/3/224/3221227465/index.m3u8",
+          "http://223.110.243.162/PLTV/3/224/3221225604/index.m3u8",
+          "http://223.110.245.141/ott.js.chinamobile.com/PLTV/3/224/3221225604/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/cctv5phd.m3u8",
+          "http://39.134.52.160/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221225496/index.m3u8",
+          "http://223.110.243.158/PLTV/3/224/3221225604/1.m3u8",
+          "http://223.110.245.139:80/PLTV/4/224/3221227480/index.m3u8",
+          "http://117.156.28.119/270000001111/1110000053/index.m3u8"
+        ],
+        "localImageResource": "cctv_5plus"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-6电影",
+        "description": "CCTV-6电影",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/88888888/224/3221225548/index.m3u8",
+          "http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221225548/index.m3u8",
+          "http://223.110.243.139/PLTV/3/224/3221225548/index.m3u8",
+          "http://223.110.243.173/PLTV/3/224/3221227209/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8",
+          "http://223.110.243.152/PLTV/3/224/3221225548/index.m3u8",
+          "http://183.251.61.207/PLTV/88888888/224/3221225805/index.m3u8",
+          "http://183.207.248.71/cntv/live1/HD-2500k-1080P-cctv6/HD-2500k-1080P-cctv6",
+          "http://117.169.120.210:8080/live/cctv-6/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-6/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-6/.m3u8",
+          "http://223.110.243.138/PLTV/3/224/3221227209/index.m3u8",
+          "http://223.110.243.149/PLTV/3/224/3221227209/index.m3u8",
+          "http://183.251.61.207/PLTV/88888888/224/3221225804/index.m3u8"
+        ],
+        "localImageResource": "cctv_6"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-7军事农业",
+        "description": "CCTV-7军事农业",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/2510088/224/3221227392/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221225546/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225805/1.m3u",
+          "http://223.110.243.155:80/PLTV/3/224/3221227392/index.m3u8",
+          "http://117.169.120.210:8080/live/cctv-7/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-7/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-7/.m3u8",
+          "http://183.207.248.8:80/PLTV/3/224/3221225546/index.m3u8"
+        ],
+        "localImageResource": "cctv_7"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-8电视剧",
+        "description": "CCTV-8电视剧",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221227205/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221227418/index.m3u8",
+          "http://223.110.243.171/PLTV/3/224/3221227204/index.m3u8",
+          "http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221227204/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/cctv8hd.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227204/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227205/index.m3u8",
+          "http://117.169.120.210:8080/live/cctv-8/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-8/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-8/.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227418/index.m3u8",
+          "http://183.207.248.71/cntv/live1/HD-2500k-1080P-cctv8/HD-2500k-1080P-cctv8",
+          "http://183.251.61.207/PLTV/88888888/224/3221225806/index.m3u8"
+        ],
+        "localImageResource": "cctv_8"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-9记录",
+        "description": "CCTV-9记录",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221225532/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221227471/index.m3u8",
+          "http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221225868/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225820/1.m3u8",
+          "http://183.251.61.207/PLTV/88888888/224/3221225820/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221225532/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227471/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/88888888/224/3221225868/index.m3u8"
+        ],
+        "localImageResource": "cctv_9"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-10科教",
+        "description": "CCTV-10科教",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/2510088/224/3221227403/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221225550/index.m3u8",
+          "http://223.110.245.170/ott.js.chinamobile.com/PLTV/3/224/3221225550/index.m3u8",
+          "http://183.207.249.14/PLTV/3/224/3221225550/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227403/index.m3u8",
+          "http://117.169.120.210:8080/live/cctv-10/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-10/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-10/.m3u8"
+        ],
+        "localImageResource": "cctv_10"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-11戏曲",
+        "description": "CCTV-11戏曲",
+        "sources": [
+          "http://183.251.61.207/PLTV/88888888/224/3221225815/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225815/1.m3u8",
+          "http://117.169.120.210:8080/live/cctv-11/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-11/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-11/.m3u8"
+        ],
+        "localImageResource": "cctv_11"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-12社会与法",
+        "description": "CCTV-12社会与法",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/2510088/224/3221227406/index.m3u8",
+          "http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221225556/index.m3u8",
+          "http://223.110.245.172/PLTV/3/224/3221225556/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227406/index.m3u8",
+          "http://223.110.245.171/PLTV/3/224/3221225556/index.m3u8",
+          "http://223.110.245.170/PLTV/3/224/3221225556/index.m3u8?icpid=88888888&from=5&ocs=2_223.110.245.172_80&hms_devid=3",
+          "http://117.169.120.210:8080/live/cctv-12/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-12/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-12/.m3u8"
+        ],
+        "localImageResource": "cctv_12"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-13新闻",
+        "description": "CCTV-13新闻",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221225560/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/2/224/3221226021/index.m3u8",
+          "http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225508/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225817/1.m3u8",
+          "http://117.169.120.210:8080/live/cctv-13/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-13/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-13/.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221225560/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/cctv13.m3u8"
+        ],
+        "localImageResource": "cctv_13"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-14少儿",
+        "description": "CCTV-14少儿",
+        "sources": [
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221227201/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221227409/index.m3u8",
+          "http://223.110.245.169/PLTV/3/224/3221227201/index.m3u8",
+          "http://183.251.61.207/PLTV/88888888/224/3221225819/index.m3u8",
+          "http://117.169.120.210:8080/live/cctv-14/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-14/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-14/.m3u8",
+          "http://117.169.120.209:8080/live/cctv-14/.m3u8?time=1530501804017",
+          "http://ott.js.chinamobile.com/PLTV/2/224/3221226023/index.m3u8"
+        ],
+        "localImageResource": "cctv_14"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CCTV-15音乐",
+        "description": "CCTV-15音乐",
+        "sources": [
+          "http://117.169.120.210:8080/live/cctv-15/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-15/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-15/.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225818/1.m3u8",
+          "http://183.207.249.7/PLTV/3/224/3221225568/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221225568/index.m3u8"
+        ],
+        "localImageResource": "cctv_15"
+      }
+    ]
+  },
+  {
+    "title": "地方卫视",
+    "cards": [
+      {
+        "type": "DEFAULT",
+        "title": "湖南卫视",
+        "description": "湖南卫视",
+        "sources": [
+          "http://183.251.61.207/PLTV/88888888/224/3221225827/index.m3u8",
+          "http://223.110.243.173/PLTV/3/224/3221227220/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225827/1.m3u8",
+          "http://183.252.176.49//PLTV/88888888/224/3221225935/index.m3u8",
+          "http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221227191/index.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225759/3.m3u8"
+        ],
+        "localImageResource": "hntv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "江苏卫视",
+        "description": "江苏卫视",
+        "sources": [
+          "http://112.50.243.8/PLTV/88888888/224/3221225847/1.m3u8",
+          "http://ivi.bupt.edu.cn/hls/jshd.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227185/index.m3u8",
+          "http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221227255/index.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/2510088/224/3221225819/index.m3u8"
+        ],
+        "localImageResource": "jstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "浙江卫视",
+        "description": "浙江卫视",
+        "sources": [
+          "http://223.110.243.153/PLTV/3/224/3221227215/index.m3u8",
+          "http://111.20.33.72/PLTV/88888888/224/3221225598/index.m3u8",
+          "http://223.110.243.173/PLTV/3/224/3221227215/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/zjhd.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225755/3.m3u8"
+        ],
+        "localImageResource": "zjtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "东方卫视",
+        "description": "东方卫视",
+        "sources": [
+          "http://112.50.243.8/PLTV/88888888/224/3221225828/1.m3u8",
+          "http://223.110.243.138/PLTV/3/224/3221227208/index.m3u8",
+          "http://hls.live.kksmg.com/live/live24h/playlist.m3u8",
+          "http://ivi.bupt.edu.cn/hls/dfhd.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225810/3.m3u8"
+        ],
+        "localImageResource": "dftv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "北京卫视",
+        "description": "北京卫视",
+        "sources": [
+          "http://112.50.243.8/PLTV/88888888/224/3221225826/1.m3u8",
+          "http://223.110.243.173/PLTV/3/224/3221227246/index.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225762/3.m3u8",
+          "http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221227436/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221225574/index.m3u8"
+        ],
+        "localImageResource": "bjtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "广东卫视",
+        "description": "广东卫视",
+        "sources": [
+          "http://183.251.61.207/PLTV/88888888/224/3221225824/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225824/1.m3u8",
+          "http://223.110.243.136/PLTV/3/224/3221227249/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/gdhd.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225811/3.m3u8"
+        ],
+        "localImageResource": "gdtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "深圳卫视",
+        "description": "深圳卫视",
+        "sources": [
+          "http://112.50.243.8/PLTV/88888888/224/3221225848/1.m3u8",
+          "http://223.110.243.171/PLTV/3/224/3221227217/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/szhd.m3u8"
+        ],
+        "localImageResource": "sztv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "天津卫视",
+        "description": "天津卫视",
+        "sources": [
+          "http://112.50.243.8/PLTV/88888888/224/3221225830/1.m3u8",
+          "http://223.110.243.170/PLTV/3/224/3221227212/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/tjhd.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225788/3.m3u8"
+        ],
+        "localImageResource": "tjtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "安徽卫视",
+        "description": "安徽卫视",
+        "sources": [
+          "http://223.110.243.140/PLTV/3/224/3221225634/index.m3u8",
+          "http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221225556/index.m3u8"
+        ],
+        "localImageResource": "ahtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "山东卫视",
+        "description": "山东卫视",
+        "sources": [
+          "http://112.50.243.8/PLTV/88888888/224/3221225843/1.m3u8",
+          "http://223.110.243.171/PLTV/3/224/3221227258/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/sdhd.m3u8",
+          "http://223.110.243.171/PLTV/3/224/3221227258/index.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225763/3.m3u8"
+        ],
+        "localImageResource": "sdtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "湖北卫视",
+        "description": "湖北卫视",
+        "sources": [
+          "http://223.110.243.140/PLTV/3/224/3221227211/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/hbhd.m3u8",
+          "http://223.110.243.171/PLTV/3/224/3221227211/index.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225764/3.m3u8"
+        ],
+        "localImageResource": "hbtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "辽宁卫视",
+        "description": "辽宁卫视",
+        "sources": [
+          "http://223.110.243.157/PLTV/3/224/3221225566/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/lnhd.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221225566/index.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225818/3.m3u8",
+          "http://223.110.245.145/ott.js.chinamobile.com/PLTV/3/224/3221227410/index.m3u8"
+        ],
+        "localImageResource": "lntv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "重庆卫视",
+        "description": "重庆卫视",
+        "sources": [
+          "http://223.110.243.138/PLTV/3/224/3221227421/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/cqhd.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227421/1.m3u8"
+        ],
+        "localImageResource": "cqtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "东南卫视",
+        "description": "东南卫视",
+        "sources": [
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225785/3.m3u8"
+        ],
+        "localImageResource": "dntv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "河北卫视",
+        "description": "河北卫视",
+        "sources": [
+          "http://weblive.hebtv.com/live/hbws_bq/index.m3u8"
+        ],
+        "localImageResource": "hebtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "黑龙江卫视",
+        "description": "黑龙江卫视",
+        "sources": [
+          "http://223.110.243.169/PLTV/3/224/3221227252/index.m3u8",
+          "http://183.251.61.207/PLTV/88888888/224/3221225862/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225862/1.m3u8",
+          "http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221227252/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/hljhd.m3u8"
+        ],
+        "localImageResource": "hljtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "江西卫视",
+        "description": "江西卫视",
+        "sources": [
+          "http://183.251.61.207/PLTV/88888888/224/3221225868/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225868/1.m3u8"
+        ],
+        "localImageResource": "jxtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "贵州卫视",
+        "description": "贵州卫视",
+        "sources": [
+          "http://183.251.61.207/PLTV/88888888/224/3221225838/index.m3u8"
+        ],
+        "localImageResource": "gztv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "甘肃卫视",
+        "description": "甘肃卫视",
+        "sources": [
+          "http://183.251.61.207/PLTV/88888888/224/3221225845/index.m3u8"
+        ],
+        "localImageResource": "gstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "新疆卫视",
+        "description": "新疆卫视",
+        "sources": [
+          "http://183.251.61.207/PLTV/88888888/224/3221225852/index.m3u8"
+        ],
+        "localImageResource": "xjtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "河南卫视",
+        "description": "河南卫视",
+        "sources": [
+          "http://223.110.245.157/ott.js.chinamobile.com/PLTV/3/224/3221225815/index.m3u8"
+        ],
+        "localImageResource": "henantv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "吉林卫视",
+        "description": "吉林卫视",
+        "sources": [
+          "http://223.110.245.153/ott.js.chinamobile.com/PLTV/3/224/3221225883/index.m3u8"
+        ],
+        "localImageResource": "jltv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "山西卫视",
+        "description": "山西卫视",
+        "sources": [
+          "http://223.110.243.155:80/PLTV/3/224/3221225576/index.m3u8"
+        ],
+        "localImageResource": "shanxitv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CHC电影",
+        "description": "CHC电影",
+        "sources": [
+          "http://ivi.bupt.edu.cn/hls/chchd.m3u8"
+        ],
+        "localImageResource": "chcdytv"
+      }
+    ]
+  },
+  {
+    "title": "体育",
+    "cards": [
+      {
+        "type": "DEFAULT",
+        "title": "北京体育",
+        "description": "北京体育",
+        "sources": [
+          "http://ivi.bupt.edu.cn/hls/btv6hd.m3u8"
+        ],
+        "localImageResource": "bjtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "劲爆体育",
+        "description": "劲爆体育",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/jbtyhd/4000000/live.m3u8"
+        ],
+        "localImageResource": "jbty"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "五星体育",
+        "description": "五星体育",
+        "sources": [
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225772/3.m3u8",
+          "http://111.48.34.235/wh7f454c46tw224879224_2084140391/huaweicdn.hb.chinamobile.com/PLTV/2510088/224/3221225772/3.m3u8",
+          "http://111.48.34.235/wh7f454c46tw3034174782_30136537/huaweicdn.hb.chinamobile.com/PLTV/2510088/224/3221225772/3.m3u8",
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/ssty/4000000/live.m3u8"
+        ],
+        "localImageResource": "wxtytv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "BesTV体育",
+        "description": "BesTV体育",
+        "sources": [
+          "http://39.134.52.157/wh7f454c46tw1627642915_-1119941135/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221226024/index.m3u8"
+        ],
+        "localImageResource": "bsttytv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "PP体育",
+        "description": "PP体育",
+        "sources": [
+          "http://117.148.187.37/PLTV/88888888/224/3221226429/index.m3u8"
+        ],
+        "localImageResource": "pptytv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "吉林篮球",
+        "description": "吉林篮球",
+        "sources": [
+          "http://223.110.242.130:6610/gitv/live1/G_LANQIU/1.m3u8",
+          "http://223.110.245.139:80/PLTV/4/224/3221227023/index.m3u8"
+        ],
+        "localImageResource": "jltv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "澳视体育",
+        "description": "澳视体育",
+        "sources": [
+          "http://103.233.191.138/ch4/sport_ch4.live/playlist.m3u8"
+        ],
+        "localImageResource": "asty"
+      }
+    ]
+  },
+  {
+    "title": "上海本地电视台",
+    "cards": [
+      {
+        "type": "DEFAULT",
+        "title": "新闻综合",
+        "description": "新闻综合",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/xwzhhd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shxwzhtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "新视觉HD",
+        "description": "新视觉HD",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/xsjhd/4000000/mnf.m3u8"
+        ],
+        "localImageResource": "shxsjtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "上海电视剧",
+        "description": "上海电视剧",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/dsjpdhd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shdsjtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "上海都市",
+        "description": "上海都市",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/ylpdhd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shdstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "上海纪实",
+        "description": "上海纪实",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/jspdhd/4000000/live.m3u8",
+        ],
+        "localImageResource": "shjstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "生活时尚",
+        "description": "生活时尚",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/shsshd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shshsstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "第一财经",
+        "description": "第一财经",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/dycjhd/4000000/live.m3u8"
+        ],
+        "localImageResource": "dycjtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "上海外语",
+        "description": "上海外语",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/wypdhd/4000000/live.m3u8",
+          "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225768/3.m3u8"
+        ],
+        "localImageResource": "shwytv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "都市剧场",
+        "description": "都市剧场",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/dsjchd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shdsjctv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "全纪实",
+        "description": "全纪实",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/qjshd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shqjstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "星尚",
+        "description": "星尚",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/shss/1300000/live.m3u8"
+        ],
+        "localImageResource": "shxstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "极速汽车",
+        "description": "极速汽车",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/jsqchd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shjsjctv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "欢笑剧场",
+        "description": "欢笑剧场",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/hxjchd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shhxjctv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "魅力音乐",
+        "description": "魅力音乐",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/mlyyhd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shmlyytv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "动漫秀场",
+        "description": "动漫秀场",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/dmxchd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shdmxctv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "游戏风云",
+        "description": "游戏风云",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/yxfyhd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shyxfytv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "幸福采",
+        "description": "幸福采",
+        "sources": [
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/xfchd/4000000/live.m3u8"
+        ],
+        "localImageResource": "shxfctv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "上海这一刻",
+        "description": "上海这一刻",
+        "sources": [
+          "http://bililive.kksmg.com/hls/sdi7000/playlist.m3u8",
+          "http://bililive.kksmg.com/hls/sdi80/playlist.m3u8"
+        ],
+        "localImageResource": "shzyktv"
+      }
+    ]
+  },
+  {
+  "title": "CIBN",
+    "cards":[
+    {
+        "type": "DEFAULT",
+        "title": "CIBN纪录片",
+        "description": "CIBN纪录片",
+        "sources": [
+        "http://14.29.60.40/live/5/30/9cf86622a8ee400287cc33f5f203ef96.m3u8?type=web.cloudplay"
+        ],
+        "localImageResource": "fhzwtv"
+    }  ,
+    {
+        "type": "DEFAULT",
+        "title": "CIBN好莱坞",
+        "description": "CIBN好莱坞",
+        "sources": [
+        "http://14.29.60.40/live/5/30/11dff5e52b0a46ecad4a5c7206277a70.m3u8?type=web.cloudplay"
+        ],
+        "localImageResource": "fhzwtv"
+    } ,
+    {
+        "type": "DEFAULT",
+        "title": "CIBN电影",
+        "description": "CIBN电影",
+        "sources": [
+        "http://14.29.60.40/live/5/30/92eda28858154bc9a4b583ea3a3f8e55.m3u8?type=web.cloudplay"
+        ],
+        "localImageResource": "fhzwtv"
+    },
+    {
+        "type": "DEFAULT",
+        "title": "CIBN喜剧影院",
+        "description": "CIBN喜剧影院",
+        "sources": [
+        "http://14.29.60.40/live/5/30/f6837f07f8e54acda5963f93447028d1.m3u8?type=web.cloudplay"
+        ],
+        "localImageResource": "fhzwtv"
+    }
+    
+    
+    ]
+  }
+  {
+    "title": "港澳台电视",
+    "cards": [
+      {
+        "type": "DEFAULT",
+        "title": "凤凰中文台",
+        "description": "凤凰中文台",
+        "sources": [
+          "http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8",
+          "http://111.13.42.13/PLTV/88888888/224/3221225942/1.m3u8",
+          "http://183.207.248.71:80/PLTV/3/224/3221226922/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221226922/index.m3u8",
+          "http://112.17.0.10:8085/ysten-business/live/fhchinese/yst.m3u8",
+          "http://223.82.250.72/live/fhchinese/1.m3u8",
+          "http://223.110.245.139/PLTV/3/224/3221226922/index.m3u8",
+          "http://223.110.243.146/PLTV/3/224/3221226922/index.m3u8"
+        ],
+        "localImageResource": "fhzwtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "凤凰资讯台",
+        "description": "凤凰资讯台",
+        "sources": [
+          "http://183.207.248.71:80/PLTV/3/224/3221226923/index.m3u8",
+          "http://221.179.217.76/PLTV/88888888/224/3221225949/index.m3u8",
+          "http://112.17.0.10:8085/ysten-business/live/fhzixun/yst.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221226923/index.m3u8",
+          "http://117.169.120.209:8080/live/fhzixun/.m3u8?time=1531627359562",
+          "http://223.110.243.146/PLTV/3/224/3221226923/index.m3u8"
+        ],
+        "localImageResource": "fhzxtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "凤凰香港台",
+        "description": "凤凰香港台",
+        "sources": [
+          "http://223.110.245.139:80/PLTV/3/224/3221226975/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221226975/index.m3u8",
+          "http://183.207.249.35/PLTV/3/224/3221226975/index.m3u8",
+          "http://223.110.243.146/PLTV/3/224/3221226975/index.m3u8",
+          "http://live.italkdd.com/cds160/hls/channel016/channel016_2000.m3u8"
+        ],
+        "localImageResource": "fhxgtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "中天新闻",
+        "description": "中天新闻",
+        "sources": [
+          "http://60.199.188.61/HLS/WG_ETTV-N/01.m3u8",
+          "http://60.199.188.61/HLS/WG_ETTV-N/index.m3u8"
+        ],
+        "localImageResource": "twztxw"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "中天综合",
+        "description": "中天综合",
+        "sources": [
+          "http://60.250.69.26:8080/live/cti89.m3u8"
+        ],
+        "localImageResource": "twztxw"
+      },
+       {
+        "type": "DEFAULT",
+        "title": "中天娱乐",
+        "description": "中天娱乐",
+        "sources": [
+          "http://60.250.69.26:8080/live/ctihappy89.m3u8"
+        ],
+        "localImageResource": "twztxw"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "TVBS",
+        "description": "TVBS",
+        "sources": [
+          "http://60.250.69.26:8080/live/tvbs89.m3u8"
+        ],
+        "localImageResource": "tvbsnews"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "TVBS新闻",
+        "description": "TVBS新闻",
+        "sources": [
+          "http://60.199.188.61/HLS/WG_TVBS-N/02.m3u8"
+        ],
+        "localImageResource": "tvbsnews"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "TVBS娱乐",
+        "description": "TVBS娱乐",
+        "sources": [
+          "http://60.250.69.26:8080/live/tvbsfun89.m3u8"
+        ],
+        "localImageResource": "tvbsnews"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "澳门卫视",
+        "description": "澳门卫视",
+        "sources": [
+          "http://stream.mastvnet.com/MSTV/SD/live.m3u8",
+          "http://stream.mastvnet.com/MASTV/sd/live.m3u8"
+        ],
+        "localImageResource": "amtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "东森新闻台",
+        "description": "东森新闻台",
+        "sources": [
+          "http://60.250.23.14:18080/CtiNews/index.m3u8",
+          "http://60.250.69.26:8080/live/ebcnews89.m3u8",
+          "http://61.216.177.73/sta/ch10119001.m3u8"
+        ],
+        "localImageResource": "dsxwtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "东森新闻财经",
+        "description": "东森新闻财经",
+        "sources": [
+          "http://60.250.69.26:8080/live/ebcfinace89.m3u8"
+        ],
+        "localImageResource": "dsxwtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "东森综合台",
+        "description": "东森综合台",
+        "sources": [
+          "http://60.250.69.26:8080/live/ebc89.m3u8"
+        ],
+        "localImageResource": "dsxwtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "壹新闻",
+        "description": "壹新闻",
+        "sources": [
+          "http://d2e6xlgy8sg8ji.cloudfront.net/liveedge/eratv3/playlist.m3u8"
+        ],
+        "localImageResource": "twytv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "年代新闻",
+        "description": "年代新闻",
+        "sources": [
+          "http://60.250.23.14:18080/CtiNews/index.m3u8"
+        ],
+        "localImageResource": "ndxwtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "三立都會台",
+        "description": "三立都會台",
+        "sources": [
+          "http://60.250.23.14:18080/setcity/index.m3u8"
+        ],
+        "localImageResource": "twsltv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "三立台灣台",
+        "description": "三立台灣台",
+        "sources": [
+          "http://125.227.35.176:18080/set/index.m3u8"
+        ],
+        "localImageResource": "twsltv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "東森電影台",
+        "description": "東森電影台",
+        "sources": [
+          "http://125.227.35.176:18080/ETChan/index.m3u8"
+        ],
+        "localImageResource": "dsdytv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "台視",
+        "description": "台視",
+        "sources": [
+          "http://125.227.35.176:18080/CTS/index.m3u8"
+        ],
+        "localImageResource": "twtstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "台視新闻",
+        "description": "台視新闻",
+        "sources": [
+          "http://live.italkdd.com/cds160/hls/channel011/channel011_2000.m3u8"
+        ],
+        "localImageResource": "twtstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "民視",
+        "description": "民視",
+        "sources": [
+          "http://125.227.35.176:18080/ftv/index.m3u8"
+        ],
+        "localImageResource": "twmstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "民視新闻",
+        "description": "民視新闻",
+        "sources": [
+          "http://210.61.56.23/hls/ftvtv/index.m3u8",
+          "http://live.italkdd.com/cds160/hls/channel012/channel012_2000.m3u8"
+        ],
+        "localImageResource": "twmstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "新加坡U5",
+        "description": "新加坡U5",
+        "sources": [
+          "https://ftach5.akamaized.net/out/v1/0b05c17bddbd459f874d7cd3b2df9464/index_5.m3u8"
+        ],
+        "localImageResource": "twmstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "新加坡U8",
+        "description": "新加坡U8",
+        "sources": [
+          "http://ftach8.akamaized.net/out/v1/e6c84096fa424e7eaab636021b2b86ec/index_1.m3u8"
+        ],
+        "localImageResource": "twmstv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "台湾中旺",
+        "description": "台湾中旺",
+        "sources": [
+          "http://live.italkdd.com/cds160/hls/channel008/channel008_2000.m3u8"
+        ],
+        "localImageResource": "twzwtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "Now TV",
+        "description": "Now TV",
+        "sources": [
+          "http://live.italkdd.com/cds160/hls/channel003/channel003_2000.m3u8"
+        ],
+        "localImageResource": "nowtv"
+      }
+    ]
+  },
+  {
+    "title": "英语",
+    "cards": [
+      {
+        "type": "DEFAULT",
+        "title": "Sky News",
+        "description": "Sky News",
+        "sources": [
+          "http://skydvn-nowtv-atv-prod.skydvn.com/atv/skynews/1404/live/04.m3u8"
+        ],
+        "localImageResource": "skynews"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "sky TG24",
+        "description": "sky TG24",
+        "sources": [
+          "http://skyianywhere2-i.akamaihd.net:80/hls/live/200275/tg24/playlist.m3u8"
+        ],
+        "localImageResource": "skytg24"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "abc News",
+        "description": "abc News",
+        "sources": [
+          "https://abclive2-lh.akamaihd.net/i/abc_live11@423404/master.m3u8"
+        ],
+        "localImageResource": "abcnews"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "FLIX",
+        "description": "FLIX",
+        "sources": [
+          "http://z5ams.akamaized.net/andflixhd/tracks-v1a1/index.m3u8"
+        ],
+        "localImageResource": "flixtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CBSN",
+        "description": "CBSN",
+        "sources": [
+          "https://www.cbsnews.com/common/video/dai_prod.m3u8"
+        ],
+        "localImageResource": "cbsntv"
+      }
+    ]
+  },
+  {
+    "title": "4K资源",
+    "cards": [
+      {
+        "type": "DEFAULT",
+        "title": "CCTV4K",
+        "description": "CCTV4K",
+        "sources": [
+          "http://117.148.187.37/PLTV/88888888/224/3221226539/index.m3u8"
+        ],
+        "localImageResource": "cctv_4k"
+      }
+    ]
+  }
+]

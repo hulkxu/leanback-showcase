@@ -25,13 +25,14 @@ import android.support.v17.leanback.widget.PlaybackControlsRow;
 import android.util.Log;
 
 
-public class VideoConsumptionExampleWithExoPlayerFragment extends VideoFragment {
+public class VideoConsumptionExampleWithExoPlayerFragment
+        extends VideoFragment {
 
-    private static final String URL = "https://storage.googleapis.com/android-tv/Sample videos/"
-            + "April Fool's 2013/Explore Treasure Mode with Google Maps.mp4";
-    public static final String TAG = "VideoConsumptionWithExoPlayer";
+    public static final String TAG = "VideoWithExoPlayer";
     private VideoMediaPlayerGlue<ExoPlayerAdapter> mMediaPlayerGlue;
     final VideoFragmentGlueHost mHost = new VideoFragmentGlueHost(this);
+    private int mCurrentSourceIndex;
+    private String[] mSourcePathArray;
 
     static void playWhenReady(PlaybackGlue glue) {
         if (glue.isPrepared()) {
@@ -50,11 +51,24 @@ public class VideoConsumptionExampleWithExoPlayerFragment extends VideoFragment 
     }
 
     AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener
-            = new AudioManager.OnAudioFocusChangeListener() {
-        @Override
-        public void onAudioFocusChange(int state) {
-        }
+            = state -> {
     };
+
+    @Override
+    protected void onError(int errorCode, CharSequence errorMessage) {
+        Log.d(TAG, "" + errorMessage);
+        Log.d(TAG, "current source:" + mSourcePathArray[mCurrentSourceIndex]);
+        if (mCurrentSourceIndex < mSourcePathArray.length - 1) {
+            mCurrentSourceIndex++;
+            mMediaPlayerGlue.getPlayerAdapter()
+                    .setDataSource(Uri.parse(mSourcePathArray[mCurrentSourceIndex]));
+            PlaybackSeekDiskDataProvider.setDemoSeekProvider(mMediaPlayerGlue);
+            playWhenReady(mMediaPlayerGlue);
+        } else {
+            getActivity().finish();
+        }
+
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -66,23 +80,23 @@ public class VideoConsumptionExampleWithExoPlayerFragment extends VideoFragment 
         mMediaPlayerGlue.setHost(mHost);
         AudioManager audioManager = (AudioManager) getActivity()
                 .getSystemService(Context.AUDIO_SERVICE);
-        if (audioManager.requestAudioFocus(mOnAudioFocusChangeListener, AudioManager.STREAM_MUSIC,
-                AudioManager.AUDIOFOCUS_GAIN) != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+        if (audioManager.requestAudioFocus(mOnAudioFocusChangeListener,
+                AudioManager.STREAM_MUSIC,
+                AudioManager.AUDIOFOCUS_GAIN)
+                != AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
             Log.w(TAG, "video player cannot obtain audio focus!");
         }
-
         mMediaPlayerGlue.setMode(PlaybackControlsRow.RepeatAction.NONE);
-        MediaMetaData intentMetaData = getActivity().getIntent().getParcelableExtra(
+        TvMetaData intentMetaData = getActivity().getIntent().getParcelableExtra(
                 VideoExampleActivity.TAG);
         if (intentMetaData != null) {
             mMediaPlayerGlue.setTitle(intentMetaData.getMediaTitle());
             mMediaPlayerGlue.setSubtitle(intentMetaData.getMediaArtistName());
-            mMediaPlayerGlue.getPlayerAdapter().setDataSource(
-                    Uri.parse(intentMetaData.getMediaSourcePath()));
+            mSourcePathArray = intentMetaData.getMediaSourcePath();
+            //mMediaPlayerGlue.getPlayerAdapter().setDataSource(intentMetaData.getMediaSourcePath());
+            mMediaPlayerGlue.getPlayerAdapter().setDataSource(Uri.parse(mSourcePathArray[0]));
         } else {
-            mMediaPlayerGlue.setTitle("Diving with Sharks");
-            mMediaPlayerGlue.setSubtitle("A Googler");
-            mMediaPlayerGlue.getPlayerAdapter().setDataSource(Uri.parse(URL));
+            Log.w(TAG, "the metadata is null");
         }
         PlaybackSeekDiskDataProvider.setDemoSeekProvider(mMediaPlayerGlue);
         playWhenReady(mMediaPlayerGlue);

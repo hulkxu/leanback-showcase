@@ -15,12 +15,14 @@
 package android.support.v17.leanback.supportleanbackshowcase.cards.presenters;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v17.leanback.supportleanbackshowcase.R;
 import android.support.v17.leanback.supportleanbackshowcase.models.Card;
 import android.support.v17.leanback.widget.ImageCardView;
 import android.view.ContextThemeWrapper;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 /**
  * A very basic {@link ImageCardView} {@link android.support.v17.leanback.widget.Presenter}.You can
@@ -54,13 +56,17 @@ public class ImageCardViewPresenter extends AbstractCardPresenter<ImageCardView>
         cardView.setTag(card);
         cardView.setTitleText(card.getTitle());
         cardView.setContentText(card.getDescription());
+        cardView.getMainImageView().setBackgroundColor(Color.WHITE);
         if (card.getLocalImageResourceName() != null) {
             int resourceId = getContext().getResources()
                     .getIdentifier(card.getLocalImageResourceName(),
                             "drawable", getContext().getPackageName());
+            RequestOptions requestOptions = new RequestOptions()
+                    .fitCenter();
             Glide.with(getContext())
                     .asBitmap()
                     .load(resourceId)
+                    .apply(requestOptions)
                     .into(cardView.getMainImageView());
         }
     }

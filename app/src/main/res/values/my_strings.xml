@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name_2">Smart TV</string>
+    <string name="smart_tv_title">Smart TV</string>
+    <string name="header_name_one">History</string>
+    <string name="header_name_two">Live TV</string>
+    <string name="header_name_Three">Films</string>
+    <string name="header_name_Four">Variety Show</string>
+    <string name="header_name_Five">Cartoon</string>
+    <string name="header_name_Six">Documentary</string>
+    <string name="header_name_Seven">Settings</string>
+</resources>

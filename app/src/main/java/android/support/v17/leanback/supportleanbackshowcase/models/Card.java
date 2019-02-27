@@ -22,6 +22,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.List;
 
 /**
  * This is a generic example of a custom data object, containing info we might want to keep with
@@ -29,18 +30,32 @@ import java.net.URISyntaxException;
  */
 public class Card {
 
-    @SerializedName("title") private String mTitle = "";
-    @SerializedName("description") private String mDescription = "";
-    @SerializedName("extraText") private String mExtraText = "";
-    @SerializedName("card") private String mImageUrl;
-    @SerializedName("footerColor") private String mFooterColor = null;
-    @SerializedName("selectedColor") private String mSelectedColor = null;
-    @SerializedName("localImageResource") private String mLocalImageResource = null;
-    @SerializedName("footerIconLocalImageResource") private String mFooterResource = null;
-    @SerializedName("type") private Card.Type mType;
-    @SerializedName("id") private int mId;
-    @SerializedName("width") private int mWidth;
-    @SerializedName("height") private int mHeight;
+    @SerializedName("title")
+    private String mTitle = "";
+    @SerializedName("description")
+    private String mDescription = "";
+    @SerializedName("extraText")
+    private String mExtraText = "";
+    @SerializedName("card")
+    private String mImageUrl;
+    @SerializedName("footerColor")
+    private String mFooterColor = null;
+    @SerializedName("selectedColor")
+    private String mSelectedColor = null;
+    @SerializedName("localImageResource")
+    private String mLocalImageResource = null;
+    @SerializedName("footerIconLocalImageResource")
+    private String mFooterResource = null;
+    @SerializedName("type")
+    private Card.Type mType;
+    @SerializedName("id")
+    private int mId;
+    @SerializedName("width")
+    private int mWidth;
+    @SerializedName("height")
+    private int mHeight;
+    @SerializedName("sources")
+    private List<String> mVideoSources = null;
 
     public String getTitle() {
         return mTitle;
@@ -153,7 +168,7 @@ public class Card {
 
     public int getLocalImageResourceId(Context context) {
         return context.getResources().getIdentifier(getLocalImageResourceName(), "drawable",
-                                                    context.getPackageName());
+                context.getPackageName());
     }
 
     public String getLocalImageResourceName() {
@@ -162,6 +177,14 @@ public class Card {
 
     public String getFooterLocalImageResourceName() {
         return mFooterResource;
+    }
+
+    public List<String> getVideoSources() {
+        return mVideoSources;
+    }
+
+    public void setVideoSources(List<String> sources) {
+        mVideoSources = sources;
     }
 
     public enum Type {

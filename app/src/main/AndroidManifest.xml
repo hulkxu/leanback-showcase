@@ -1,17 +1,17 @@
 <manifest
-    package="android.support.v17.leanback.supportleanbackshowcase"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="android.support.v17.leanback.supportleanbackshowcase">
 
     <uses-sdk
-        tools:overrideLibrary="android.support.media.tv" />
+        tools:overrideLibrary="android.support.media.tv"/>
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA" />
-    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA"/>
+    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA"/>
 
     <uses-feature
         android:name="android.hardware.touchscreen"
@@ -21,12 +21,12 @@
         android:required="true"/>
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/app_banner_sample_app"
-        android:banner="@string/app_name"
         android:name=".app.room.controller.app.SampleApplication"
-        android:supportsRtl="true"
+        android:allowBackup="true"
+        android:banner="@string/app_name"
+        android:icon="@mipmap/app_banner_sample_app"
         android:largeHeap="true"
+        android:supportsRtl="true"
         android:theme="@style/Theme.Example.LeanbackLauncher">
         <activity
             android:name=".app.MainActivity"
@@ -35,16 +35,21 @@
             android:label="@string/app_name"
             android:logo="@mipmap/app_banner_sample_app"
             android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".app.smarttv.SmartTVMainActivity"
+            android:exported="true"
+            android:icon="@mipmap/app_name_smart_tv"
+            android:label="@string/app_name_2"
+            android:logo="@mipmap/app_name_smart_tv"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.Example.Leanback.CustomTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
+                <category android:name="android.intent.category.LAUNCHER"/>
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-                android:name=".app.page.PageAndListRowActivity"
-                android:exported="true"
-                android:theme="@style/Theme.Example.Leanback.CustomTitle"/>
         <activity
             android:name=".app.wizard.WizardExampleActivity"
             android:exported="true"
@@ -79,49 +84,49 @@
             android:theme="@style/Theme.Example.LeanbackVerticalGrid"/>
         <activity
             android:name=".app.media.VideoExampleActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Example.Leanback"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
+            android:exported="true"
             android:launchMode="singleTask"
             android:resizeableActivity="true"
-            android:supportsPictureInPicture="true"/>
+            android:supportsPictureInPicture="true"
+            android:theme="@style/Theme.Example.Leanback"/>
         <activity
-            android:name=".app.media.VideoExampleWithExoPlayerActivity"
-            android:exported="true"
-            android:theme="@style/Theme.Example.Leanback"
+            android:name=".app.smarttv.SmartPlayerActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|layoutDirection"
+            android:exported="true"
             android:launchMode="singleTask"
             android:resizeableActivity="true"
-            android:supportsPictureInPicture="true"/>
+            android:supportsPictureInPicture="true"
+            android:theme="@style/Theme.Example.Leanback"/>
         <activity
             android:name=".app.media.MusicExampleActivity"
             android:exported="true"
             android:theme="@style/Theme.Example.LeanbackMusic"/>
         <activity
-            android:theme="@style/Theme.Example.LeanbackBrowse"
             android:name=".app.rows.DynamicVideoRowsActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Example.LeanbackBrowse">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
                 <data
-                    android:scheme="rowsnewapi"
                     android:host="android.support.v17.leanback.supportleanbackshowcase"
-                    android:path="/startapp" />
+                    android:path="/startapp"
+                    android:scheme="rowsnewapi"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".app.rows.VideoPlaybackActivity">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
                 <data
-                    android:scheme="rowsnewapi"
                     android:host="android.support.v17.leanback.supportleanbackshowcase"
                     android:pathPrefix="/playvideo"
-                    />
+                    android:scheme="rowsnewapi"
+                />
             </intent-filter>
         </activity>
         <activity
@@ -152,8 +157,15 @@
             android:theme="@style/Theme.Leanback.Details.NoSharedElementTransition">
 
         </activity>
+        <activity
+            android:name=".app.smarttv.SearchVideoActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Leanback.Details.NoSharedElementTransition">
 
-        <service android:exported="false" android:name=".app.media.MusicPlaybackService"/>
+        </activity>
+
+        <service android:name=".app.media.MusicPlaybackService" android:exported="false"/>
     </application>
 
 </manifest>

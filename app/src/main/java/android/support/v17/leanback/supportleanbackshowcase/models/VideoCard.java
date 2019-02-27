@@ -15,12 +15,9 @@
 package android.support.v17.leanback.supportleanbackshowcase.models;
 
 
-import com.google.gson.annotations.SerializedName;
-
-import java.io.Serializable;
-import java.util.List;
-
 import android.support.v17.leanback.supportleanbackshowcase.R;
+
+import com.google.gson.annotations.SerializedName;
 
 /**
  * The video card data structure used to hold the fields of each video card fetched from the
@@ -28,22 +25,16 @@ import android.support.v17.leanback.supportleanbackshowcase.R;
  */
 public class VideoCard extends Card {
 
-    @SerializedName("sources") private List<String> mVideoSources = null;
-    @SerializedName("background") private String mBackgroundUrl = "";
-    @SerializedName("studio") private String mStudio = "";
+    @SerializedName("background")
+    private String mBackgroundUrl = "";
+    @SerializedName("studio")
+    private String mStudio = "";
 
     public VideoCard() {
         super();
         setType(Type.VIDEO_GRID);
     }
 
-    public List<String> getVideoSources() {
-        return mVideoSources;
-    }
-
-    public void setVideoSources(List<String> sources) {
-        mVideoSources = sources;
-    }
 
     public String getBackground() {
         return mBackgroundUrl;

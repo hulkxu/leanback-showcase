@@ -21,13 +21,16 @@ android {
     buildToolsVersion rootProject.buildToolsVersion
     defaultConfig {
         applicationId 'com.example.android.persistence'
-        minSdkVersion 21
+        minSdkVersion 17
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     buildTypes {
         debug {
             minifyEnabled false
@@ -82,7 +85,7 @@ dependencies {
 
     implementation "com.google.code.gson:gson:2.8.1"
     implementation "com.android.support:palette-v7:" + rootProject.supportLibVersion
-    implementation 'com.google.android.exoplayer:exoplayer:r2.2.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.3'
 
     implementation 'com.github.bumptech.glide:glide:4.0.0-RC1'
     implementation 'com.android.support:support-tv-provider:' + rootProject.supportLibVersion
@@ -93,6 +96,7 @@ dependencies {
     implementation "com.google.dagger:dagger:2.11"
     implementation "com.google.dagger:dagger-android:2.11"
     implementation "com.google.dagger:dagger-android-support:2.11"
+    implementation "org.jsoup:jsoup:1.10.2"
 
     annotationProcessor "com.google.dagger:dagger-android-processor:2.11"
     annotationProcessor "com.google.dagger:dagger-compiler:2.11"

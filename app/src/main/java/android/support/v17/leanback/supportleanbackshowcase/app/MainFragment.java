@@ -31,6 +31,8 @@ import android.support.v17.leanback.supportleanbackshowcase.app.page.PageAndList
 import android.support.v17.leanback.supportleanbackshowcase.app.room.controller.overview.LiveDataRowsActivity;
 import android.support.v17.leanback.supportleanbackshowcase.app.rows.*;
 import android.support.v17.leanback.supportleanbackshowcase.app.settings.SettingsExampleActivity;
+import android.support.v17.leanback.supportleanbackshowcase.app.smarttv.SmartTVMainActivity;
+import android.support.v17.leanback.supportleanbackshowcase.app.smarttv.SmartTVMainFragment;
 import android.support.v17.leanback.supportleanbackshowcase.app.wizard.WizardExampleActivity;
 import android.support.v17.leanback.supportleanbackshowcase.cards.presenters.CardPresenterSelector;
 import android.support.v17.leanback.supportleanbackshowcase.models.Card;
@@ -117,7 +119,7 @@ public class MainFragment extends BrowseFragment {
                 }
                 case 1:
                     intent = new Intent(getActivity().getBaseContext(),
-                            PageAndListRowActivity.class);
+                            SmartTVMainActivity.class);
                     break;
                 case 2: {
                     intent = new Intent(getActivity().getBaseContext(),

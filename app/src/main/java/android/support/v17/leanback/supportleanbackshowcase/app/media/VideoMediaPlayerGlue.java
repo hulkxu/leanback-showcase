@@ -16,9 +16,12 @@
 package android.support.v17.leanback.supportleanbackshowcase.app.media;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Handler;
 import android.support.v17.leanback.media.PlaybackTransportControlGlue;
 import android.support.v17.leanback.media.PlayerAdapter;
+import android.support.v17.leanback.supportleanbackshowcase.R;
+import android.support.v17.leanback.supportleanbackshowcase.app.smarttv.SmartPlayerFragment;
 import android.support.v17.leanback.widget.Action;
 import android.support.v17.leanback.widget.ArrayObjectAdapter;
 import android.support.v17.leanback.widget.PlaybackControlsRow;
@@ -26,6 +29,7 @@ import android.widget.Toast;
 
 /**
  * PlayerGlue for video playback
+ *
  * @param <T>
  */
 public class VideoMediaPlayerGlue<T extends PlayerAdapter> extends PlaybackTransportControlGlue<T> {
@@ -35,6 +39,8 @@ public class VideoMediaPlayerGlue<T extends PlayerAdapter> extends PlaybackTrans
     private PlaybackControlsRow.ThumbsDownAction mThumbsDownAction;
     private PlaybackControlsRow.PictureInPictureAction mPipAction;
     private PlaybackControlsRow.ClosedCaptioningAction mClosedCaptioningAction;
+    private PlaybackControlsRow.SkipNextAction mSkipNextAction;
+    private PlaybackControlsRow.MoreActions mMoreAction;
 
     public VideoMediaPlayerGlue(Activity context, T impl) {
         super(context, impl);
@@ -45,6 +51,8 @@ public class VideoMediaPlayerGlue<T extends PlayerAdapter> extends PlaybackTrans
         mThumbsDownAction.setIndex(PlaybackControlsRow.ThumbsDownAction.OUTLINE);
         mRepeatAction = new PlaybackControlsRow.RepeatAction(context);
         mPipAction = new PlaybackControlsRow.PictureInPictureAction(context);
+        mSkipNextAction = new PlaybackControlsRow.SkipNextAction(context);
+        mMoreAction = new PlaybackControlsRow.MoreActions(context);
     }
 
     @Override
@@ -54,6 +62,7 @@ public class VideoMediaPlayerGlue<T extends PlayerAdapter> extends PlaybackTrans
         if (android.os.Build.VERSION.SDK_INT > 23) {
             adapter.add(mPipAction);
         }
+        adapter.add(mMoreAction);
     }
 
     @Override
@@ -61,6 +70,7 @@ public class VideoMediaPlayerGlue<T extends PlayerAdapter> extends PlaybackTrans
         super.onCreatePrimaryActions(adapter);
         adapter.add(mRepeatAction);
         adapter.add(mClosedCaptioningAction);
+        adapter.add(mSkipNextAction);
     }
 
     @Override
@@ -74,12 +84,21 @@ public class VideoMediaPlayerGlue<T extends PlayerAdapter> extends PlaybackTrans
 
     private boolean shouldDispatchAction(Action action) {
         return action == mRepeatAction || action == mThumbsUpAction || action == mThumbsDownAction
-                || action == mPipAction || action == mClosedCaptioningAction;
+                || action == mPipAction || action == mClosedCaptioningAction || action == mSkipNextAction
+                || action == mMoreAction;
     }
 
     private void dispatchAction(Action action) {
         if (action == mPipAction) {
-            ((Activity) getContext()).enterPictureInPictureMode();
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                ((Activity) getContext()).enterPictureInPictureMode();
+            }
+        } else if (action == mSkipNextAction) {
+            ((SmartPlayerFragment) (((Activity) getContext())
+                    .getFragmentManager().findFragmentById(R.id.videoFragment))).nextVideoSource(false);
+        } else if (action == mMoreAction) {
+            ((SmartPlayerFragment) (((Activity) getContext())
+                    .getFragmentManager().findFragmentById(R.id.videoFragment))).showDebugTextView();
         } else {
             Toast.makeText(getContext(), action.toString(), Toast.LENGTH_SHORT).show();
             PlaybackControlsRow.MultiAction multiAction = (PlaybackControlsRow.MultiAction) action;
