@@ -69,12 +69,12 @@
         "title": "CCTV-4中文国际",
         "description": "CCTV-4中文国际",
         "sources": [
-          "http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221227378/index.m3u8",
-          "http://223.110.242.130:6610/gitv/live1/G_CCTV-4-HQ/1.m3u8",
           "http://ott.js.chinamobile.com/PLTV/3/224/3221225534/index.m3u8",
+          "http://223.110.242.130:6610/gitv/live1/G_CCTV-4-HQ/1.m3u8",
           "http://117.169.120.210:8080/live/cctv-4/.m3u8",
           "http://117.169.120.160:8080/live/cctv-4/.m3u8",
-          "http://117.169.120.159:8080/live/cctv-4/.m3u8"
+          "http://117.169.120.159:8080/live/cctv-4/.m3u8",
+          "http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221227378/index.m3u8"
         ],
         "localImageResource": "cctv_4"
       },
@@ -106,14 +106,14 @@
         "title": "CCTV-5+体育赛事",
         "description": "CCTV-5+体育赛事",
         "sources": [
-          "http://223.110.243.155:80/PLTV/3/224/3221227465/index.m3u8",
-          "http://223.110.243.162/PLTV/3/224/3221225604/index.m3u8",
           "http://223.110.245.141/ott.js.chinamobile.com/PLTV/3/224/3221225604/index.m3u8",
           "http://ivi.bupt.edu.cn/hls/cctv5phd.m3u8",
           "http://39.134.52.160/hwottcdn.ln.chinamobile.com/PLTV/88888890/224/3221225496/index.m3u8",
           "http://223.110.243.158/PLTV/3/224/3221225604/1.m3u8",
           "http://223.110.245.139:80/PLTV/4/224/3221227480/index.m3u8",
-          "http://117.156.28.119/270000001111/1110000053/index.m3u8"
+          "http://117.156.28.119/270000001111/1110000053/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227465/index.m3u8",
+          "http://223.110.243.162/PLTV/3/224/3221225604/index.m3u8"
         ],
         "localImageResource": "cctv_5plus"
       },
@@ -277,10 +277,10 @@
         "title": "CCTV-15音乐",
         "description": "CCTV-15音乐",
         "sources": [
+          "http://112.50.243.8/PLTV/88888888/224/3221225818/1.m3u8",
           "http://117.169.120.210:8080/live/cctv-15/.m3u8",
           "http://117.169.120.160:8080/live/cctv-15/.m3u8",
           "http://117.169.120.159:8080/live/cctv-15/.m3u8",
-          "http://112.50.243.8/PLTV/88888888/224/3221225818/1.m3u8",
           "http://183.207.249.7/PLTV/3/224/3221225568/index.m3u8",
           "http://223.110.243.155:80/PLTV/3/224/3221225568/index.m3u8"
         ],
@@ -674,7 +674,7 @@
         "title": "上海纪实",
         "description": "上海纪实",
         "sources": [
-          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/jspdhd/4000000/live.m3u8",
+          "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/jspdhd/4000000/live.m3u8"
         ],
         "localImageResource": "shjstv"
       },
@@ -800,48 +800,46 @@
     ]
   },
   {
-  "title": "CIBN",
-    "cards":[
-    {
+    "title": "CIBN",
+    "cards": [
+      {
         "type": "DEFAULT",
         "title": "CIBN纪录片",
         "description": "CIBN纪录片",
         "sources": [
-        "http://14.29.60.40/live/5/30/9cf86622a8ee400287cc33f5f203ef96.m3u8?type=web.cloudplay"
+          "http://14.29.60.40/live/5/30/9cf86622a8ee400287cc33f5f203ef96.m3u8?type=web.cloudplay"
         ],
         "localImageResource": "fhzwtv"
-    }  ,
-    {
+      },
+      {
         "type": "DEFAULT",
         "title": "CIBN好莱坞",
         "description": "CIBN好莱坞",
         "sources": [
-        "http://14.29.60.40/live/5/30/11dff5e52b0a46ecad4a5c7206277a70.m3u8?type=web.cloudplay"
+          "http://14.29.60.40/live/5/30/11dff5e52b0a46ecad4a5c7206277a70.m3u8?type=web.cloudplay"
         ],
         "localImageResource": "fhzwtv"
-    } ,
-    {
+      },
+      {
         "type": "DEFAULT",
         "title": "CIBN电影",
         "description": "CIBN电影",
         "sources": [
-        "http://14.29.60.40/live/5/30/92eda28858154bc9a4b583ea3a3f8e55.m3u8?type=web.cloudplay"
+          "http://14.29.60.40/live/5/30/92eda28858154bc9a4b583ea3a3f8e55.m3u8?type=web.cloudplay"
         ],
         "localImageResource": "fhzwtv"
-    },
-    {
+      },
+      {
         "type": "DEFAULT",
         "title": "CIBN喜剧影院",
         "description": "CIBN喜剧影院",
         "sources": [
-        "http://14.29.60.40/live/5/30/f6837f07f8e54acda5963f93447028d1.m3u8?type=web.cloudplay"
+          "http://14.29.60.40/live/5/30/f6837f07f8e54acda5963f93447028d1.m3u8?type=web.cloudplay"
         ],
         "localImageResource": "fhzwtv"
-    }
-    
-    
+      }
     ]
-  }
+  },
   {
     "title": "港澳台电视",
     "cards": [
@@ -907,7 +905,7 @@
         ],
         "localImageResource": "twztxw"
       },
-       {
+      {
         "type": "DEFAULT",
         "title": "中天娱乐",
         "description": "中天娱乐",
@@ -1160,9 +1158,19 @@
         "title": "CCTV4K",
         "description": "CCTV4K",
         "sources": [
+          "http://117.148.187.83/PLTV/88888888/224/3221226539/index.m3u8",
           "http://117.148.187.37/PLTV/88888888/224/3221226539/index.m3u8"
         ],
         "localImageResource": "cctv_4k"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "百视通4K电影",
+        "description": "百视通4K电影",
+        "sources": [
+          "http://117.148.187.83/PLTV/88888888/224/3221226718/index.m3u8"
+        ],
+        "localImageResource": "bsttytv"
       }
     ]
   }
