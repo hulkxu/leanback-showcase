@@ -25,9 +25,10 @@ import com.google.gson.Gson;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 /**
  * Live TV fragment embeds a rows fragment.
@@ -71,14 +72,9 @@ public class TvLiveFragment extends RowsFragment {
             mTvListLoader.cancel(false);
             mTvListLoader = null;
         }
-        if (mTvListOnlineLoader != null) {
-            mTvListOnlineLoader.cancel(false);
-            mTvListOnlineLoader = null;
-        }
+
         mTvListLoader = new TvListLoader();
         mTvListLoader.execute();
-        mTvListOnlineLoader = new TvListOnlineLoader();
-        mTvListOnlineLoader.execute();
     }
 
     @Override
@@ -100,10 +96,10 @@ public class TvLiveFragment extends RowsFragment {
         protected List<Row> doInBackground(Void... voids) {
             Log.d(TAG, "load data from github");
             BufferedReader reader = null;
-            HttpURLConnection urlConnection = null;
+            HttpsURLConnection urlConnection = null;
             try {
                 java.net.URL url = new java.net.URL(TV_SOURCE_URL);
-                urlConnection = (HttpURLConnection) url.openConnection();
+                urlConnection = (HttpsURLConnection) url.openConnection();
                 reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream(),
                         "utf-8"));
                 StringBuilder sb = new StringBuilder();
@@ -136,9 +132,11 @@ public class TvLiveFragment extends RowsFragment {
         @Override
         protected void onPostExecute(List<Row> result) {
             Log.d(TAG, "load finish. update UI");
-            mRowsAdapter.clear();
-            mRowsAdapter.addAll(mRowsAdapter.size(), result);
-            getMainFragmentAdapter().getFragmentHost().notifyDataReady(getMainFragmentAdapter());
+            if (result != null) {
+                mRowsAdapter.clear();
+                mRowsAdapter.addAll(mRowsAdapter.size(), result);
+                getMainFragmentAdapter().getFragmentHost().notifyDataReady(getMainFragmentAdapter());
+            }
         }
 
     }
@@ -165,6 +163,14 @@ public class TvLiveFragment extends RowsFragment {
             mRowsAdapter.clear();
             mRowsAdapter.addAll(mRowsAdapter.size(), result);
             getMainFragmentAdapter().getFragmentHost().notifyDataReady(getMainFragmentAdapter());
+            if (!getActivity().isDestroyed()) {
+                if (mTvListOnlineLoader != null) {
+                    mTvListOnlineLoader.cancel(false);
+                    mTvListOnlineLoader = null;
+                }
+                mTvListOnlineLoader = new TvListOnlineLoader();
+                mTvListOnlineLoader.execute();
+            }
         }
 
     }
