@@ -7,10 +7,11 @@
         "title": "CCTV-1综合",
         "description": "CCTV-1综合",
         "sources": [
-          "http://ott.js.chinamobile.com/PLTV/88888888/224/3221225530/index.m3u8",
-          "http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221225530/index.m3u8",
+          "http://223.110.242.130:6610/gitv/live1/G_CCTV-1-HQ/1.m3u8",
           "http://183.251.61.207/PLTV/88888888/224/3221225922/index.m3u8",
           "http://183.252.176.10/PLTV/88888888/224/3221225922/index.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/88888888/224/3221225530/index.m3u8",
+          "http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221225530/index.m3u8",
           "http://183.207.249.15/PLTV/3/224/3221225530/index.m3u8",
           "http://202.107.188.232:5002/cctv1_hdcq-1.m3u8?token=radio366",
           "http://117.169.120.210:8080/live/cctv-1/.m3u8",
@@ -31,13 +32,13 @@
         "title": "CCTV-2财经",
         "description": "CCTV-2财经",
         "sources": [
+          "http://117.169.120.210:8080/live/cctv-2/.m3u8",
+          "http://117.169.120.160:8080/live/cctv-2/.m3u8",
+          "http://117.169.120.159:8080/live/cctv-2/.m3u8",
           "http://ott.js.chinamobile.com/PLTV/2510088/224/3221226993/index.m3u8",
           "http://ott.js.chinamobile.com/PLTV/3/224/3221227207/index.m3u8",
           "http://223.110.245.170/ott.js.chinamobile.com/PLTV/3/224/3221227207/index.m3u8",
           "http://112.50.243.10/PLTV/88888888/224/3221225800/1.m3u8",
-          "http://117.169.120.210:8080/live/cctv-2/.m3u8",
-          "http://117.169.120.160:8080/live/cctv-2/.m3u8",
-          "http://117.169.120.159:8080/live/cctv-2/.m3u8",
           "http://223.110.243.155:80/PLTV/3/224/3221227412/index.m3u8",
           "http://223.110.243.155:80/PLTV/3/224/3221227207/index.m3u8"
         ],
@@ -48,9 +49,10 @@
         "title": "CCTV-3综艺",
         "description": "CCTV-2综艺",
         "sources": [
+          "http://223.110.242.130:6610/gitv/live1/G_CCTV-3-HQ/1.m3u8",
+          "http://183.207.249.14/PLTV/3/224/3221225588/index.m3u8",
           "http://ott.js.chinamobile.com/PLTV/3/224/3221225588/index.m3u8",
           "http://ott.js.chinamobile.com/PLTV/3/224/3221227415/index.m3u8",
-          "http://183.207.249.14/PLTV/3/224/3221225588/index.m3u8",
           "http://183.207.248.71/cntv/live1/HD-2500k-1080P-cctv3/HD-2500k-1080P-cctv3",
           "http://183.207.249.14/PLTV/3/224/3221225588/index.m3u8",
           "http://117.169.120.210:8080/live/cctv-3/.m3u8",
@@ -69,8 +71,8 @@
         "title": "CCTV-4中文国际",
         "description": "CCTV-4中文国际",
         "sources": [
-          "http://ott.js.chinamobile.com/PLTV/3/224/3221225534/index.m3u8",
           "http://223.110.242.130:6610/gitv/live1/G_CCTV-4-HQ/1.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221225534/index.m3u8",
           "http://117.169.120.210:8080/live/cctv-4/.m3u8",
           "http://117.169.120.160:8080/live/cctv-4/.m3u8",
           "http://117.169.120.159:8080/live/cctv-4/.m3u8",
@@ -83,21 +85,21 @@
         "title": "CCTV-5体育",
         "description": "CCTV-5体育",
         "sources": [
-          "http://ott.js.chinamobile.com/PLTV/3/224/3221227166/index.m3u8",
+          "http://223.110.242.130:6610/gitv/live1/G_CCTV-5-HQ/1.m3u8",
+          "http://183.207.248.71/cntv/live1/HD-2500k-1080P-cctv5/HD-2500k-1080P-cctv5",
           "http://ott.js.chinamobile.com/PLTV/2510088/224/3221227468/index.m3u8",
-          "http://223.110.243.149/PLTV/3/224/3221227166/index.m3u8",
-          "http://223.110.245.165/ott.js.chinamobile.com/PLTV/3/224/3221226362/index.m3u8",
-          "http://223.110.243.172/PLTV/3/224/3221227166/index.m3u8",
+          "http://111.40.205.87/PLTV/88888888/224/3221225690/index.m3u8",
           "http://117.169.120.210:8080/live/cctv-5/.m3u8",
           "http://117.169.120.160:8080/live/cctv-5/.m3u8",
           "http://117.169.120.159:8080/live/cctv-5/.m3u8",
-          "http://223.110.243.155:80/PLTV/3/224/3221227166/1.m3u8",
-          "http://223.110.243.155:80/PLTV/3/224/3221227468/1.m3u8",
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221227166/index.m3u8",
           "http://223.110.245.165/ott.js.chinamobile.com/PLTV/3/224/3221227401/index.m3u8",
           "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225800/3.m3u8",
           "http://183.251.61.207/PLTV/88888888/224/3221225925/index.m3u8",
-          "http://183.207.248.71/cntv/live1/HD-2500k-1080P-cctv5/HD-2500k-1080P-cctv5",
-          "http://111.40.205.87/PLTV/88888888/224/3221225690/index.m3u8"
+          "http://223.110.243.149/PLTV/3/224/3221227166/index.m3u8",
+          "http://223.110.243.172/PLTV/3/224/3221227166/index.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227166/1.m3u8",
+          "http://223.110.243.155:80/PLTV/3/224/3221227468/1.m3u8"
         ],
         "localImageResource": "cctv_5"
       },
@@ -122,6 +124,7 @@
         "title": "CCTV-6电影",
         "description": "CCTV-6电影",
         "sources": [
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221225548/index.m3u8",
           "http://ott.js.chinamobile.com/PLTV/88888888/224/3221225548/index.m3u8",
           "http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221225548/index.m3u8",
           "http://223.110.243.139/PLTV/3/224/3221225548/index.m3u8",
@@ -144,6 +147,7 @@
         "title": "CCTV-7军事农业",
         "description": "CCTV-7军事农业",
         "sources": [
+          "http://223.110.242.130:6610/gitv/live1/G_CCTV-7-HQ/1.m3u8",
           "http://ott.js.chinamobile.com/PLTV/2510088/224/3221227392/index.m3u8",
           "http://ott.js.chinamobile.com/PLTV/3/224/3221225546/index.m3u8",
           "http://112.50.243.8/PLTV/88888888/224/3221225805/1.m3u",
@@ -160,6 +164,7 @@
         "title": "CCTV-8电视剧",
         "description": "CCTV-8电视剧",
         "sources": [
+          "http://223.110.242.130:6610/gitv/live1/G_CCTV-8-HQ/1.m3u8",
           "http://ott.js.chinamobile.com/PLTV/3/224/3221227205/index.m3u8",
           "http://ott.js.chinamobile.com/PLTV/3/224/3221227418/index.m3u8",
           "http://223.110.243.171/PLTV/3/224/3221227204/index.m3u8",
@@ -197,6 +202,7 @@
         "title": "CCTV-10科教",
         "description": "CCTV-10科教",
         "sources": [
+          "http://223.110.242.130:6610/gitv/live1/G_CCTV-10-HQ/1.m3u8",
           "http://ott.js.chinamobile.com/PLTV/2510088/224/3221227403/index.m3u8",
           "http://ott.js.chinamobile.com/PLTV/3/224/3221225550/index.m3u8",
           "http://223.110.245.170/ott.js.chinamobile.com/PLTV/3/224/3221225550/index.m3u8",
@@ -213,6 +219,7 @@
         "title": "CCTV-11戏曲",
         "description": "CCTV-11戏曲",
         "sources": [
+          "http://223.110.242.130:6610/gitv/live1/G_CCTV-11-HQ/1.m3u8",
           "http://183.251.61.207/PLTV/88888888/224/3221225815/index.m3u8",
           "http://112.50.243.8/PLTV/88888888/224/3221225815/1.m3u8",
           "http://117.169.120.210:8080/live/cctv-11/.m3u8",
@@ -226,6 +233,7 @@
         "title": "CCTV-12社会与法",
         "description": "CCTV-12社会与法",
         "sources": [
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221225556/index.m3u8",
           "http://ott.js.chinamobile.com/PLTV/2510088/224/3221227406/index.m3u8",
           "http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221225556/index.m3u8",
           "http://223.110.245.172/PLTV/3/224/3221225556/index.m3u8",
@@ -277,6 +285,7 @@
         "title": "CCTV-15音乐",
         "description": "CCTV-15音乐",
         "sources": [
+          "http://ott.js.chinamobile.com/PLTV/3/224/3221225568/index.m3u8",
           "http://112.50.243.8/PLTV/88888888/224/3221225818/1.m3u8",
           "http://117.169.120.210:8080/live/cctv-15/.m3u8",
           "http://117.169.120.160:8080/live/cctv-15/.m3u8",
@@ -323,9 +332,8 @@
         "title": "浙江卫视",
         "description": "浙江卫视",
         "sources": [
-          "http://223.110.243.153/PLTV/3/224/3221227215/index.m3u8",
-          "http://111.20.33.72/PLTV/88888888/224/3221225598/index.m3u8",
           "http://223.110.243.173/PLTV/3/224/3221227215/index.m3u8",
+          "http://111.20.33.72/PLTV/88888888/224/3221225598/index.m3u8",
           "http://ivi.bupt.edu.cn/hls/zjhd.m3u8",
           "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225755/3.m3u8"
         ],
@@ -349,8 +357,8 @@
         "title": "北京卫视",
         "description": "北京卫视",
         "sources": [
-          "http://112.50.243.8/PLTV/88888888/224/3221225826/1.m3u8",
           "http://223.110.243.173/PLTV/3/224/3221227246/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225826/1.m3u8",
           "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225762/3.m3u8",
           "http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221227436/index.m3u8",
           "http://223.110.243.155:80/PLTV/3/224/3221225574/index.m3u8"
@@ -362,9 +370,9 @@
         "title": "广东卫视",
         "description": "广东卫视",
         "sources": [
+          "http://223.110.243.136/PLTV/3/224/3221227249/index.m3u8",
           "http://183.251.61.207/PLTV/88888888/224/3221225824/index.m3u8",
           "http://112.50.243.8/PLTV/88888888/224/3221225824/1.m3u8",
-          "http://223.110.243.136/PLTV/3/224/3221227249/index.m3u8",
           "http://ivi.bupt.edu.cn/hls/gdhd.m3u8",
           "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225811/3.m3u8"
         ],
@@ -375,8 +383,8 @@
         "title": "深圳卫视",
         "description": "深圳卫视",
         "sources": [
-          "http://112.50.243.8/PLTV/88888888/224/3221225848/1.m3u8",
           "http://223.110.243.171/PLTV/3/224/3221227217/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225848/1.m3u8",
           "http://ivi.bupt.edu.cn/hls/szhd.m3u8"
         ],
         "localImageResource": "sztv"
@@ -386,8 +394,8 @@
         "title": "天津卫视",
         "description": "天津卫视",
         "sources": [
-          "http://112.50.243.8/PLTV/88888888/224/3221225830/1.m3u8",
           "http://223.110.243.170/PLTV/3/224/3221227212/index.m3u8",
+          "http://112.50.243.8/PLTV/88888888/224/3221225830/1.m3u8",
           "http://ivi.bupt.edu.cn/hls/tjhd.m3u8",
           "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225788/3.m3u8"
         ],
@@ -408,10 +416,9 @@
         "title": "山东卫视",
         "description": "山东卫视",
         "sources": [
+          "http://223.110.243.171/PLTV/3/224/3221227258/index.m3u8",
           "http://112.50.243.8/PLTV/88888888/224/3221225843/1.m3u8",
-          "http://223.110.243.171/PLTV/3/224/3221227258/index.m3u8",
           "http://ivi.bupt.edu.cn/hls/sdhd.m3u8",
-          "http://223.110.243.171/PLTV/3/224/3221227258/index.m3u8",
           "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225763/3.m3u8"
         ],
         "localImageResource": "sdtv"
@@ -421,9 +428,9 @@
         "title": "湖北卫视",
         "description": "湖北卫视",
         "sources": [
-          "http://223.110.243.140/PLTV/3/224/3221227211/index.m3u8",
-          "http://ivi.bupt.edu.cn/hls/hbhd.m3u8",
           "http://223.110.243.171/PLTV/3/224/3221227211/index.m3u8",
+          "http://ivi.bupt.edu.cn/hls/hbhd.m3u8",
+          "http://223.110.243.140/PLTV/3/224/3221227211/index.m3u8",
           "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225764/3.m3u8"
         ],
         "localImageResource": "hbtv"
@@ -457,6 +464,7 @@
         "title": "东南卫视",
         "description": "东南卫视",
         "sources": [
+          "http://223.110.243.158/PLTV/3/224/3221225598/index.m3u8",
           "http://huaweicdn.hb.chinamobile.com/PLTV/88888888/224/3221225785/3.m3u8"
         ],
         "localImageResource": "dntv"
@@ -466,6 +474,7 @@
         "title": "河北卫视",
         "description": "河北卫视",
         "sources": [
+          "http://223.110.243.140/PLTV/3/224/3221225602/index.m3u8",
           "http://weblive.hebtv.com/live/hbws_bq/index.m3u8"
         ],
         "localImageResource": "hebtv"
@@ -498,6 +507,7 @@
         "title": "贵州卫视",
         "description": "贵州卫视",
         "sources": [
+          "http://223.110.243.152/PLTV/3/224/3221225540/index.m3u8",
           "http://183.251.61.207/PLTV/88888888/224/3221225838/index.m3u8"
         ],
         "localImageResource": "gztv"
@@ -507,6 +517,7 @@
         "title": "甘肃卫视",
         "description": "甘肃卫视",
         "sources": [
+          "http://223.110.243.158/PLTV/3/224/3221225590/index.m3u8",
           "http://183.251.61.207/PLTV/88888888/224/3221225845/index.m3u8"
         ],
         "localImageResource": "gstv"
@@ -543,6 +554,7 @@
         "title": "山西卫视",
         "description": "山西卫视",
         "sources": [
+          "http://223.110.243.159/PLTV/3/224/3221225576/index.m3u8",
           "http://223.110.243.155:80/PLTV/3/224/3221225576/index.m3u8"
         ],
         "localImageResource": "shanxitv"
@@ -674,6 +686,7 @@
         "title": "上海纪实",
         "description": "上海纪实",
         "sources": [
+          "http://117.169.79.101:8080/PLTV/88888888/224/3221225765/index.m3u8",
           "http://113.142.90.138/chinanet4-live.bestvcdn.com.cn/live/program/live/jspdhd/4000000/live.m3u8"
         ],
         "localImageResource": "shjstv"
@@ -807,6 +820,7 @@
         "title": "CIBN纪录片",
         "description": "CIBN纪录片",
         "sources": [
+          "http://gs.hdp.ds.lunbocl.ott.cibntv.net/hls/vCIBNJLPD/1800/vCIBNJLPD.m3u8?md5=c246ac4e6b6cb88b7f970b530ff04b86",
           "http://14.29.60.40/live/5/30/9cf86622a8ee400287cc33f5f203ef96.m3u8?type=web.cloudplay"
         ],
         "localImageResource": "fhzwtv"
@@ -816,6 +830,7 @@
         "title": "CIBN好莱坞",
         "description": "CIBN好莱坞",
         "sources": [
+          "http://dangbei.ds01.cibn.cc/hls/vCIBNHLWPD/1800/vCIBNHLWPD.m3u8?md5=b778284c6b5f9fb6f65dfe26a7f3c3ed",
           "http://14.29.60.40/live/5/30/11dff5e52b0a46ecad4a5c7206277a70.m3u8?type=web.cloudplay"
         ],
         "localImageResource": "fhzwtv"
@@ -825,6 +840,7 @@
         "title": "CIBN电影",
         "description": "CIBN电影",
         "sources": [
+          "http://gs.moli.ds.lunbocl.ott.CIBNtv.net/hls/vCIBNDYPD/1800/vCIBNDYPD.m3u8?md5=c246ac4e6b6cb88b7f970b530ff04b86",
           "http://14.29.60.40/live/5/30/92eda28858154bc9a4b583ea3a3f8e55.m3u8?type=web.cloudplay"
         ],
         "localImageResource": "fhzwtv"
@@ -834,7 +850,35 @@
         "title": "CIBN喜剧影院",
         "description": "CIBN喜剧影院",
         "sources": [
+          "http://gs.moli.ds.lunbocl.ott.cibntv.net/hls/vCIBNHSYX/1800/vCIBNHSYX.m3u8?md5=c246ac4e6b6cb88b7f970b530ff04b86",
           "http://14.29.60.40/live/5/30/f6837f07f8e54acda5963f93447028d1.m3u8?type=web.cloudplay"
+        ],
+        "localImageResource": "fhzwtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CIBN精品影院",
+        "description": "CIBN精品影院",
+        "sources": [
+          "http://gs.moli.ds.lunbocl.ott.cibntv.net/hls/vCIBNJPYY/1800/vCIBNJPYY.m3u8?md5=c246ac4e6b6cb88b7f970b530ff04b86"
+        ],
+        "localImageResource": "fhzwtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CIBN院线大片",
+        "description": "CIBN院线大片",
+        "sources": [
+          "http://dangbei.ds01.cibn.cc/hls/vCIBNHYPD/1800/vCIBNHYPD.m3u8?md5=b778284c6b5f9fb6f65dfe26a7f3c3ed"
+        ],
+        "localImageResource": "fhzwtv"
+      },
+      {
+        "type": "DEFAULT",
+        "title": "CIBN动作影院",
+        "description": "CIBN动作影院",
+        "sources": [
+          "http://dangbei.ds01.cibn.cc/hls/vCIBNDZYY/1800/vCIBNDZYY.m3u8?md5=b778284c6b5f9fb6f65dfe26a7f3c3ed"
         ],
         "localImageResource": "fhzwtv"
       }
@@ -848,14 +892,15 @@
         "title": "凤凰中文台",
         "description": "凤凰中文台",
         "sources": [
-          "http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8",
+          "http://112.50.243.7/PLTV/88888888/224/3221225900/index.m3u8",
           "http://111.13.42.13/PLTV/88888888/224/3221225942/1.m3u8",
           "http://183.207.248.71:80/PLTV/3/224/3221226922/index.m3u8",
           "http://223.110.243.155:80/PLTV/3/224/3221226922/index.m3u8",
           "http://112.17.0.10:8085/ysten-business/live/fhchinese/yst.m3u8",
           "http://223.82.250.72/live/fhchinese/1.m3u8",
           "http://223.110.245.139/PLTV/3/224/3221226922/index.m3u8",
-          "http://223.110.243.146/PLTV/3/224/3221226922/index.m3u8"
+          "http://223.110.243.146/PLTV/3/224/3221226922/index.m3u8",
+          "http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8"
         ],
         "localImageResource": "fhzwtv"
       },
@@ -864,6 +909,8 @@
         "title": "凤凰资讯台",
         "description": "凤凰资讯台",
         "sources": [
+          "http://183.207.249.35/PLTV/3/224/3221226923/index.m3u8",
+          "http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226923/index.m3u8",
           "http://183.207.248.71:80/PLTV/3/224/3221226923/index.m3u8",
           "http://221.179.217.76/PLTV/88888888/224/3221225949/index.m3u8",
           "http://112.17.0.10:8085/ysten-business/live/fhzixun/yst.m3u8",
