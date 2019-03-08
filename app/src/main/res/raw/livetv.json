@@ -32,13 +32,13 @@
         "title": "CCTV-2财经",
         "description": "CCTV-2财经",
         "sources": [
+          "http://112.50.243.10/PLTV/88888888/224/3221225800/1.m3u8",
           "http://117.169.120.210:8080/live/cctv-2/.m3u8",
           "http://117.169.120.160:8080/live/cctv-2/.m3u8",
           "http://117.169.120.159:8080/live/cctv-2/.m3u8",
           "http://ott.js.chinamobile.com/PLTV/2510088/224/3221226993/index.m3u8",
           "http://ott.js.chinamobile.com/PLTV/3/224/3221227207/index.m3u8",
           "http://223.110.245.170/ott.js.chinamobile.com/PLTV/3/224/3221227207/index.m3u8",
-          "http://112.50.243.10/PLTV/88888888/224/3221225800/1.m3u8",
           "http://223.110.243.155:80/PLTV/3/224/3221227412/index.m3u8",
           "http://223.110.243.155:80/PLTV/3/224/3221227207/index.m3u8"
         ],
