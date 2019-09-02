@@ -644,7 +644,7 @@
   },
   {
     "title": "上海本地电视台",
-    "cards":[
+    "cards": [
       {
         "type": "DEFAULT",
         "title": "上海教育",
@@ -654,7 +654,7 @@
         ],
         "localImageResource": "shxwzhtv"
       },  
-    "cards":[
+    "cards": [
       {
         "type": "DEFAULT",
         "title": "新闻综合",
