@@ -653,8 +653,7 @@
           "http://live.setv.sh.cn/slive/shedu02_1200k.m3u8"
         ],
         "localImageResource": "shxwzhtv"
-      },  
-    "cards": [
+      },
       {
         "type": "DEFAULT",
         "title": "新闻综合",
